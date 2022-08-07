@@ -6,6 +6,7 @@ import telebot
 URL = 'https://www.anekdot.ru/last/good'
 API_KEY = '5426927571:AAEaolCYvDp5dt3GHqgWEaGVS_jHgRaN7j8'
 
+# something comment
 def parser(url):
     """
     Вычисляется является ли парсером
