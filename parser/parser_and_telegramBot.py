@@ -8,12 +8,16 @@ API_KEY = '5426927571:AAEaolCYvDp5dt3GHqgWEaGVS_jHgRaN7j8'
 
 def parser(url):
     r = requests.get(url)
+    s = 1
+    print(s)
     soup = b(r.text, 'html.parser')
     anekdots = soup.find_all('div', class_='text')
     return [c.text for c in anekdots]
 
 list_of_jokes = parser(URL)
 random.shuffle(list_of_jokes)
+
+
 
 bot = telebot.TeleBot(API_KEY)
 @bot.message_handler(commands=['Начать'])
