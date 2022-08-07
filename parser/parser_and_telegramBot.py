@@ -7,6 +7,11 @@ URL = 'https://www.anekdot.ru/last/good'
 API_KEY = '5426927571:AAEaolCYvDp5dt3GHqgWEaGVS_jHgRaN7j8'
 
 def parser(url):
+    """
+    Вычисляется является ли парсером
+    :param url:
+    :return:
+    """
     r = requests.get(url)
     s = 1
     print(s)
