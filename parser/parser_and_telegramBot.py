@@ -13,8 +13,6 @@ def parser(url):
     :return:
     """
     r = requests.get(url)
-    s = 1
-    print(s)
     soup = b(r.text, 'html.parser')
     anekdots = soup.find_all('div', class_='text')
     return [c.text for c in anekdots]
