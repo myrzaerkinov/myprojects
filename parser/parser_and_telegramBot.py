@@ -24,7 +24,9 @@ def parser(url):
 list_of_jokes = parser(URL)
 random.shuffle(list_of_jokes)
 
-
+# 1 комментарий
+# 2 комментарий
+# 3 комментарий
 
 bot = telebot.TeleBot(API_KEY)
 @bot.message_handler(commands=['Начать'])
