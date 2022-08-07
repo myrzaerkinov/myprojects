@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup as b
 import random
 import telebot
+# comment
 
 URL = 'https://www.anekdot.ru/last/good'
 API_KEY = '5426927571:AAEaolCYvDp5dt3GHqgWEaGVS_jHgRaN7j8'
